@@ -12,7 +12,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { name: 'Inicio', href: '/' },
   { name: 'Sobre Mim', href: '#about' },
-  { name: 'Habilidades', href: '#skills' },
+  // { name: 'Habilidades', href: '#skills' },
   { name: 'Contato', href: '#contact' },
 ];
 
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
         </div>
         <ul className='flex gap-3 align-middle'>
           {navItems.map((item) => (
-            <Link key={item.name} className='hover:bg-gray-700 p-2 rounded-md font-semibold' href={item.href}>
+            <Link key={item.name} className='hover:bg-gray-700 p-2 rounded-md ' href={item.href}>
               {item.name}
             </Link>
           ))}

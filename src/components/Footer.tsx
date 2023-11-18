@@ -17,7 +17,7 @@ const iconsLinks: IconsLinks[] = [
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white text-center p-4">
-      <div className="container mx-auto font-semibold">
+      <div className="container mx-auto ">
         <p>&copy; {new Date().getFullYear()} MV Web Developer. Todos os direitos reservados.</p>
         <div className="flex justify-center space-x-4 mt-2">
           {iconsLinks.map((item) => (

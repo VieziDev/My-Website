@@ -1,8 +1,5 @@
-'use client'
-
 import Image from "next/image";
 import vector from "../../public/mv-head.svg"
-import { IconButton } from "@radix-ui/themes";
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 import Link from "next/link";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
@@ -28,14 +25,13 @@ const socialIcons: SocialIcons[] = [
     href: ""
   },
 ]
-
-export default function Hero() {
+const Hero: React.FC = () => {
   return (
     <section className="flex h-screen justify-center items-center bg-gray-800">
       <div className="container flex gap-24 justify-center items-center">
-        <div>
-          <h1 className="text-8xl text-white font-bold">Matheus Viezi</h1>
-          <p className="text-4xl text-gray-300 font-semibold my-4">Desenvolvedor Web</p>
+        <span>
+          <h1 className="text-8xl text-white font-semibold">Matheus Viezi</h1>
+          <p className="text-4xl text-gray-300 my-4">Desenvolvedor Web</p>
           <div className="flex gap-4">
             {socialIcons.map((item, index) => (
               <Link key={index} href={item.href} target="_blank" className="hover:bg-gray-700 p-2 rounded-md" >
@@ -43,7 +39,7 @@ export default function Hero() {
               </Link>
             ))}
           </div>
-        </div>
+        </span>
         <div className="">
           <Image alt="My Head" src={vector} />
         </div>
@@ -51,3 +47,5 @@ export default function Hero() {
     </section>
   )
 }
+
+export default Hero;

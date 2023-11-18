@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
-import { Theme } from '@radix-ui/themes';
-import '@radix-ui/themes/styles.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -20,13 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <Theme accentColor="indigo">
-          <Header />
-          {children}
-          <Footer />
-        </Theme>
+      <body className={montserrat.className} >
+        <Header />
+        {children}
+        <Footer />
       </body>
-    </html>
+    </html >
   )
 }
