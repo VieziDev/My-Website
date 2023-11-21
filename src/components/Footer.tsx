@@ -1,3 +1,4 @@
+'use client'
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { ReactElement } from "react";

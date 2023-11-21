@@ -1,14 +1,14 @@
-'use client'
-import About from "@/components/About";
+import Hero from '@/pages/index/Hero';
 import './globals.css'
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
+import About from '@/pages/about/About';
+import Contact from '@/pages/contact/Contact';
+
 
 
 
 export default function MyPorfolio() {
   return (
-    <main className="bg-gray-800 m-auto scroll-smooth">
+    <main className="bg-gray-800 m-auto">
       <Hero />
       <About />
       <Contact />
