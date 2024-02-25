@@ -15,11 +15,7 @@ const socialIcons: SocialIcons[] = [
   },
   {
     icon: <LinkedInLogoIcon width={32} height={32} color="white" />,
-    href: ""
-  },
-  {
-    icon: <InstagramLogoIcon width={32} height={32} color="white" />,
-    href: ""
+    href: "https://www.linkedin.com/in/matheus-viezi-1879901a2/"
   },
 ]
 

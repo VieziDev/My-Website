@@ -10,8 +10,7 @@ interface IconsLinks {
 
 const iconsLinks: IconsLinks[] = [
   { icon: <GitHubLogoIcon />, href: 'https://github.com/VieziDev' },
-  { icon: <LinkedInLogoIcon />, href: 'https://facebook.com' },
-  { icon: <InstagramLogoIcon />, href: 'https://instagram.com' },
+  { icon: <LinkedInLogoIcon />, href: 'https://www.linkedin.com/in/matheus-viezi-1879901a2/' },
 
 ];
 
@@ -22,7 +21,7 @@ const Footer: React.FC = () => {
         <p>&copy; {new Date().getFullYear()} MV Web Developer. Todos os direitos reservados.</p>
         <div className="flex justify-center space-x-4 mt-2">
           {iconsLinks.map((item) => (
-            <Link key={item.href} className='hover:bg-gray-700 p-2 rounded-md' href={item.href}>
+            <Link key={item.href} className='hover:bg-gray-700 p-2 rounded-md' href={item.href} target="_blank">
               {item.icon}
             </Link>
           ))}

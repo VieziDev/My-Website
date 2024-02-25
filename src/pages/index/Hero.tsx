@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="container flex gap-24 justify-center items-center">
           <span>
             <h1 className="text-8xl text-white font-semibold">Matheus Viezi</h1>
-            <p className="text-4xl text-gray-300 my-4">Desenvolvedor Web</p>
+            <p className="text-4xl text-gray-300 my-4">Desenvolvedor Web & Mobile</p>
             <div className="flex gap-4">
               <SocialIconsTab />
             </div>
